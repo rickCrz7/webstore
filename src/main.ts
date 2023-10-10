@@ -3,5 +3,8 @@ import '@unocss/reset/tailwind.css'
 import 'virtual:uno.css'
 import './style.css'
 import App from './App.vue'
+import router from './router'
+const app = createApp(App)
+app.use(router)
 
-createApp(App).mount('#app')
+app.mount('#app')
