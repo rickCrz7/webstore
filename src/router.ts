@@ -7,6 +7,21 @@ const routes = [
         path: '/momentum4',
         name: 'Momentum4',
         component: () => import('./views/Product1.vue')
+    },
+    {
+        path: '/WH-1000XM4',
+        name: 'XM4',
+        component: () => import('./views/Product2.vue')
+    },
+    {
+        path: '/quietcomfort',
+        name: 'QuietComfort',
+        component: () => import('./views/Product3.vue')
+    },
+    {
+        path: '/checkout',
+        name: 'Checkout',
+        component: () => import('./views/Checkout.vue')
     }
 ]
 
