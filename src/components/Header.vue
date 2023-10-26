@@ -1,6 +1,6 @@
 <template>
-    <header class="bg-gray-800 text-white shadow-xl border-t-4 border-primary">
-        <div class="container mx-auto flex justify-between items-center py-4">
+    <header>
+        <div class="container mx-auto flex justify-between items-center p-4">
             <div class="flex items-center p-4">
                 <router-link
                     class="text-lg font-bold flex items-center gap-2"
@@ -23,19 +23,28 @@
                         <router-link
                             class="menu-item"
                             :to="{ name: 'QuietComfort' }"
-                            >Bose QuietComfort Ultra</router-link
+                            >QuietComfort Ultra</router-link
                         >
                         <router-link class="pl-8" :to="{ name: 'Checkout' }"
                             ><i class="i-mdi:cart-outline text-3xl"></i
                         ></router-link>
                     </ul>
                 </div>
-                <div class="flex justify-between items-center md:hidden">
+                <div
+                    class="flex justify-between items-center lg:hidden text-white"
+                >
                     <div>
                         <button @click="toggleMenu">Menu</button>
                     </div>
                 </div>
             </nav>
+            <div class="lg:hidden flex items-center text-white">
+                <div>
+                    <button @click="toggleMenu">
+                        <i class="i-mdi:menu text-3xl"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
 </template>

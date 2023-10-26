@@ -2,6 +2,7 @@
     <div id="main" class="min-h-screen grid grid-rows-[auto_1fr_auto]">
         <HeaderView />
         <RouterView />
+        <!-- <FooterView /> -->
     </div>
 </template>
 

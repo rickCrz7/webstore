@@ -9,3 +9,63 @@ body {
 .menu-item {
     @apply p-4 border-b border-gray-600 hover:bg-gray-600 hover:text-white;
 }
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container .button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container .text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @apply w-full;
+}
+
+.image-container .sub-heading {
+    position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @apply w-full;
+}
+
+.learn-more {
+    @apply  text-white text-3xl border-b-4  border-gray-600 hover:text-white hover:text-gray-600 ;
+}
+
+.heading{
+    @apply flex justify-center text-6xl text-white font-bold;
+}
+
+.sub-heading{
+    @apply flex justify-center text-3xl  font-semibold;
+    text-shadow: 2px 2px #02a4f0;
+}
+
+.card-heading{
+    @apply flex justify-center text-4xl text-white font-semibold;
+}
+
+.card-sub-heading{
+    @apply flex justify-center text-xl text-white pt-6;
+}
+
+header{
+    @apply bg-gray-800 text-white shadow-xl border-t-4 border-primary;
+}
+
+

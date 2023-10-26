@@ -14,7 +14,7 @@ const routes = [
         component: () => import('./views/Product2.vue')
     },
     {
-        path: '/quietcomfort',
+        path: '/QuietComfort',
         name: 'QuietComfort',
         component: () => import('./views/Product3.vue')
     },
