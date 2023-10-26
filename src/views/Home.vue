@@ -1,24 +1,26 @@
 <template>
     <main class="">
         <div class="image-container">
-            <img
-                src="/src/assets/Momentum4.webp"
-                alt="banner"
-                class="w-full h-3/4 bg-coolgray-300 flex justify-center opacity-85"
-            />
+            <div>
+                <img
+                    src="/src/assets/Momentum4.webp"
+                    alt="banner"
+                    class="bg-coolgray-300 flex justify-center opacity-85"
+                />
+            </div>
             <div class="text-overlay">
                 <span class="heading">Sennheiser Mometum 4 Wireless</span>
             </div>
             <div class="sub-heading">
-                <span class="sub-heading">Immerse Yourself</span>
+                <span class="sub-heading">Immerse Yourself </span>
             </div>
             <div class="button-overlay">
                 <button class="learn-more" @click="goToPage('Momentum4')">
-                    Learn More
+                    Learn More <i class="i-mdi:chevron-right text-4xl mb-1"></i>
                 </button>
             </div>
         </div>
-        <div class="grid grid-cols-2 h-1/2 mt-12 gap-6 p-4">
+        <div class="grid grid-cols-2 h-3/4 mt-12 gap-6 p-4">
             <div class="w-full bg-gray-8 p-4 rounded-lg">
                 <img
                     src="/src/assets/sony-wh-1000xm4-lifestyle.webp"
@@ -36,6 +38,7 @@
                 <div class="flex justify-center mt-20">
                     <button class="learn-more" @click="goToPage('WH-1000XM4')">
                         Learn More
+                        <i class="i-mdi:chevron-right text-4xl mb-1"></i>
                     </button>
                 </div>
             </div>
@@ -57,6 +60,7 @@
                         @click="goToPage('QuietComfort')"
                     >
                         Learn More
+                        <i class="i-mdi:chevron-right text-4xl mb-1"></i>
                     </button>
                 </div>
             </div>

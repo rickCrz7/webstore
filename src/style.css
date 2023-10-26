@@ -15,9 +15,10 @@ body {
 }
 
 .image-container img {
+    object-fit: cover;
     display: block;
     width: 100%;
-    height: auto;
+    height: 1080px;
 }
 
 .image-container .button-overlay {
@@ -37,10 +38,10 @@ body {
 
 .image-container .sub-heading {
     position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        @apply w-full;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @apply w-full;
 }
 
 .learn-more {
@@ -61,11 +62,11 @@ body {
 }
 
 .card-sub-heading{
-    @apply flex justify-center text-xl text-white pt-6;
+    @apply flex justify-center text-xl text-white pt-6 font-semibold;
 }
 
 header{
-    @apply bg-gray-800 text-white shadow-xl border-t-4 border-primary;
+    @apply bg-gray-800 text-white shadow-l border-t-4 border-primary;
 }
 
 
