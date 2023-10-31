@@ -11,16 +11,16 @@
             <div class="text-overlay">
                 <span class="heading">Sennheiser Mometum 4 Wireless</span>
             </div>
-            <div class="sub-heading">
+            <!-- <div class="sub-heading">
                 <span class="sub-heading">Immerse Yourself </span>
-            </div>
+            </div> -->
             <div class="button-overlay">
                 <button class="learn-more" @click="goToPage('Momentum4')">
                     Learn More <i class="i-mdi:chevron-right text-4xl mb-1"></i>
                 </button>
             </div>
         </div>
-        <div class="grid grid-cols-2 h-3/4 mt-12 gap-6 p-4">
+        <div class="grid lg:grid-cols-2 h-96 mt-12 gap-6 p-4">
             <div class="w-full bg-gray-8 p-4 rounded-lg">
                 <img
                     src="/src/assets/sony-wh-1000xm4-lifestyle.webp"

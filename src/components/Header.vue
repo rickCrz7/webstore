@@ -10,7 +10,7 @@
                 >
             </div>
             <nav class="hidden flex-col text-2xl lg:flex lg:flex-row">
-                <div id="menuDiv" class="hidden lg:flex lg:flex-row">
+                <div id="menuDiv" class="hidden flex-col lg:flex lg:flex-row">
                     <ul class="flex items-center">
                         <router-link
                             class="menu-item"
