@@ -1,5 +1,5 @@
 <template>
-    <main class="">
+    <main>
         <div class="image-container">
             <div>
                 <img
@@ -11,9 +11,9 @@
             <div class="text-overlay">
                 <span class="heading">Sennheiser Mometum 4 Wireless</span>
             </div>
-            <!-- <div class="sub-heading">
+            <div class="sub-heading">
                 <span class="sub-heading">Immerse Yourself </span>
-            </div> -->
+            </div>
             <div class="button-overlay">
                 <button class="learn-more" @click="goToPage('Momentum4')">
                     Learn More <i class="i-mdi:chevron-right text-4xl mb-1"></i>
@@ -35,7 +35,7 @@
                         >Industy leading noise canceling</span
                     >
                 </div>
-                <div class="flex justify-center mt-20">
+                <div class="flex justify-center my-20">
                     <button class="learn-more" @click="goToPage('WH-1000XM4')">
                         Learn More
                         <i class="i-mdi:chevron-right text-4xl mb-1"></i>
@@ -48,13 +48,13 @@
                     alt="banner"
                     class="opacity-85 rounded-md"
                 />
-                <div class="pt-4">
+                <div class="pt-4 whitespace-nowrap">
                     <span class="card-heading">Bose QuietComfort Ultra</span>
                 </div>
                 <div>
                     <span class="card-sub-heading">Comfort, Style, Sound</span>
                 </div>
-                <div class="flex justify-center mt-20">
+                <div class="flex justify-center my-20">
                     <button
                         class="learn-more"
                         @click="goToPage('QuietComfort')"
@@ -64,6 +64,7 @@
                     </button>
                 </div>
             </div>
+            <br />
         </div>
     </main>
 </template>

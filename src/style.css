@@ -38,14 +38,14 @@ body {
 
 .image-container .sub-heading {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     @apply w-full;
 }
 
 .learn-more {
-    @apply  text-white text-3xl border-b-4  border-gray-600 hover:text-white hover:text-gray-600 ;
+    @apply  text-white text-3xl border-b-4  border-gray-600 hover:border-blue-5 hover:ml-4;
 }
 
 .heading{
