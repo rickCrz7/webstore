@@ -25,7 +25,7 @@
                 <img
                     src="/src/assets/sony-wh-1000xm4-lifestyle.webp"
                     alt="banner"
-                    class="opacity-85 rounded-md"
+                    class="opacity-85 rounded-md w-full"
                 />
                 <div class="pt-4">
                     <span class="card-heading">Sony WH-1000XM4</span>
