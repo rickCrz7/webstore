@@ -75,6 +75,7 @@ header{
     object-position: 26% 26%;
     width: 100%;
     height: 90vh;
+    opacity: 45%;
 }
 
 .product-image .button-overlay {
@@ -90,7 +91,7 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    @apply text-5xl font-bold sm:hidden;
+    @apply text-5xl font-bold sm:hidden w-3/4;
 }
 
 .product-image .text-overlayMD {
