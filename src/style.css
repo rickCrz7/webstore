@@ -72,10 +72,9 @@ header{
 
 .product-image img {
     object-fit: cover;
-    object-position: 25% 0;
-    display: block;
+    object-position: 26% 26%;
     width: 100%;
-    height: 1300px;
+    height: 90vh;
 }
 
 .product-image .button-overlay {
@@ -83,5 +82,29 @@ header{
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
-    @apply rounded-full bg-blue-8 p-5 text-white text-xl;
+    @apply rounded-full bg-blue-8 px-5 py-2 text-white text-xl;
+}
+
+.product-image .text-overlaySM {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @apply text-5xl font-bold sm:hidden;
+}
+
+.product-image .text-overlayMD {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    @apply text-5xl lg:text-7xl font-bold w-1/4 hidden sm:block;
+}
+
+.product-image .price-overlay {
+    position: relative;
+    top: 80%; /* adjust this value to move the price down */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @apply text-5xl font-bold;
 }

@@ -11,15 +11,22 @@
             </div>
             <div class="hidden flex-col lg:flex lg:flex-row">
                 <ul class="flex items-center text-xl">
-                    <router-link class="menu-item" :to="{ name: 'Momentum4' }"
+                    <router-link
+                        class="menu-item"
+                        :to="{ name: 'Momentum4' }"
+                        @click="hideMenu"
                         >Momentum 4</router-link
                     >
-                    <router-link class="menu-item" :to="{ name: 'XM4' }"
+                    <router-link
+                        class="menu-item"
+                        :to="{ name: 'XM4' }"
+                        @click="hideMenu"
                         >Sony WH-1000XM4</router-link
                     >
                     <router-link
                         class="menu-item"
                         :to="{ name: 'QuietComfort' }"
+                        @click="hideMenu"
                         >QuietComfort Ultra</router-link
                     >
                     <router-link class="pl-8" :to="{ name: 'Checkout' }"
@@ -37,18 +44,28 @@
         </nav>
         <div id="menuDiv" class="hidden flex-col py-2">
             <ul class="flex flex-col w-screen items-right gap-2 ml-4">
-                <router-link class="py-4" :to="{ name: 'Momentum4' }"
+                <router-link
+                    class="py-4"
+                    :to="{ name: 'Momentum4' }"
+                    @click="hideMenu"
                     >Momentum 4</router-link
                 >
-                <router-link class="py-4" :to="{ name: 'XM4' }"
+                <router-link
+                    class="py-4"
+                    :to="{ name: 'XM4' }"
+                    @click="hideMenu"
                     >Sony WH-1000XM4</router-link
                 >
-                <router-link class="py-4" :to="{ name: 'QuietComfort' }"
+                <router-link
+                    class="py-4"
+                    :to="{ name: 'QuietComfort' }"
+                    @click="hideMenu"
                     >QuietComfort Ultra</router-link
                 >
                 <router-link
                     class="flex gap-4 items-center justify-center"
                     :to="{ name: 'Checkout' }"
+                    @click="hideMenu"
                     ><span>Checkout</span
                     ><i class="i-mdi:cart-outline text-xl"></i
                 ></router-link>
@@ -68,5 +85,11 @@ const toggleMenu = () => {
     } else {
         el.classList.replace('flex', 'hidden')
     }
+}
+
+const hideMenu = () => {
+    const el = document.getElementById('menuDiv')
+    if (!el) return
+    el.classList.replace('flex', 'hidden')
 }
 </script>
