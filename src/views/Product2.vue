@@ -1,23 +1,26 @@
 <template>
-    <main>
+    <main style="position: relative">
         <div class="product-image">
             <img
                 src="/src/assets/HXM4~3.webp"
                 alt="banner"
                 class="bg-coolgray-300 flex justify-center opacity-85"
             />
-            <button class="button-overlay" @click="goToThankYou">
+            <button class="button-overlay" @click="goToCheckout">
                 Buy Now
             </button>
             <div class="text-overlaySM">
-                <span>Sony WH-1000XM4</span>
+                <h1 class="text-3xl">Sony WH-1000XM4</h1>
+                <h1 class="text-2xl">$3499.99</h1>
+                <br />
+                <h2>Comfortable and lightweight</h2>
+                <h2>Industry Leading Noise Cancellation</h2>
+                <h2>Premium look & feel</h2>
             </div>
             <div class="text-overlayMD">
-                <span class="">Sony WH-1000XM4</span>
-                <div class="mt-4 flex justify-center">
-                    <span class="">$349.99</span>
-                </div>
-                <div class="text-3xl mt-8 p-4 rounded-2xl">
+                <h1 class="text-3xl">Sony WH-1000XM4</h1>
+                <h1 class="text-2xl">$349.99</h1>
+                <div class="text-3xl mt-2 px-24 rounded-2xl">
                     <div><span>Comfortable and lightweight</span></div>
                     <br />
                     <div>
@@ -36,7 +39,7 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
-const goToThankYou = () => {
-    router.push({ name: 'ThankYou' })
+const goToCheckout = () => {
+    router.push({ name: 'Checkout', query: { from: 'XM4' } })
 }
 </script>

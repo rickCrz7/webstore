@@ -1,23 +1,26 @@
 <template>
-    <main>
+    <main style="position: relative">
         <div class="product-image">
             <img
                 src="/src/assets/HBOSE~3.webp"
                 alt="banner"
                 class="bg-coolgray-300 flex justify-center opacity-85"
             />
-            <button class="button-overlay" @click="goToThankYou">
+            <button class="button-overlay" @click="goToCheckout">
                 Buy Now
             </button>
             <div class="text-overlaySM">
-                <span>Bose QuietComfort Ultra</span>
+                <h1 class="text-3xl">Bose QuietComfort Ultra</h1>
+                <h1 class="text-2xl">$429.99</h1>
+                <br />
+                <h2>Elite Comfort and Sound</h2>
+                <h2>Bose Signature Sound</h2>
+                <h2>Premium Noise Canceling Headphones</h2>
             </div>
             <div class="text-overlayMD">
-                <span class="">Bose QuietComfort Ultra</span>
-                <div class="mt-4 flex justify-center">
-                    <span class="">$429.99</span>
-                </div>
-                <div class="text-3xl mt-8 p-4 rounded-2xl">
+                <h1 class="text-3xl">Bose QuietComfort Ultra</h1>
+                <h1 class="text-2xl">$429.99</h1>
+                <div class="text-3xl mt-2 px-24 rounded-2xl">
                     <div><span>Elite Comfort and Sound</span></div>
                     <br />
                     <div>
@@ -36,7 +39,7 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
-const goToThankYou = () => {
-    router.push({ name: 'ThankYou' })
+const goToCheckout = () => {
+    router.push({ name: 'Checkout', query: { from: 'QCU' } })
 }
 </script>
