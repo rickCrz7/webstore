@@ -1,0 +1,1 @@
+import{i as s}from"./index-b45bf320.js";const m=s("cart",{state:()=>({items:[]}),actions:{addItem(t){this.items.push(t)},removeItem(t){const e=this.items.findIndex(i=>i.id===t.id);this.items.splice(e,1)},clearCart(){this.items=[]}}});m();export{m as u};
