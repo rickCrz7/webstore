@@ -7,7 +7,7 @@
                 class="bg-coolgray-300 flex justify-center opacity-85"
             />
             <button class="button-overlay" @click="goToCheckout">
-                Buy Now
+                Add to Cart
             </button>
             <div class="text-overlaySM">
                 <h1 class="text-3xl">Sony WH-1000XM4</h1>
